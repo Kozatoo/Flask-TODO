@@ -1,0 +1,53 @@
+body{
+    background-color: #ebebeb;
+    background-image: url(../img/insat.png);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}
+
+.container{
+
+    width: 35%;
+    margin:auto;
+    margin-top:17vh
+}
+.header h1 {
+    color:white;
+}
+
+.container *{
+    border-radius: 10px;
+    margin :10px;
+    vertical-align: middle;
+}
+
+.header{
+}
+
+.input{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.todos{
+    background-color: white;
+}
+.todo{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px ;
+}
+.todo .checkbox{
+    width: 10%;
+}
+.todo p{
+    width: 70%;
+}
+.todo button{
+    width: 10%;
+}
