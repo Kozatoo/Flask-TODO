@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 body{
     background-color: #ebebeb;
     background-image: url(../img/insat.png);
@@ -11,8 +13,28 @@ body{
     margin:auto;
     margin-top:17vh
 }
+.header{
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .header h1 {
+    width: 100%;
+    margin: 0;
     color:white;
+    font-size: 55px;
+    font-family: 'Ms Madi', cursive;
+}
+.header .todo{
+    display: inline;
+    font-family: 'Titillium Web', sans-serif;
+}
+.header .qt {
+    margin: 0;
+    margin-top:30px;
+    text-align: end;
+    font-size: 30px;
 }
 
 .container *{
@@ -21,16 +43,21 @@ body{
     vertical-align: middle;
 }
 
-.header{
-}
 
 .input{
     background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    min-height: 60px;
 }
-
+.input input{
+    width: 80%;
+    border: none;
+}
+.input input:focus{
+    outline:none
+}
 .todos{
     background-color: white;
 }
@@ -39,15 +66,83 @@ body{
     flex-direction: row;
     justify-content:space-between;
     width: 100%;
+    min-height: 60px;
     margin: 0;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px ;
 }
-.todo .checkbox{
-    width: 10%;
-}
+
 .todo p{
-    width: 70%;
+    width: 60%;
 }
 .todo button{
     width: 10%;
+    height: 40px;
+    padding: 0;
+    margin:3px
 }
+.todo button * {
+    margin: 0;
+}
+.todo input{
+    width: 10%;
+    height:30px
+}
+
+.editButton{
+    fill:#24c4c8 
+}
+.timeClock{
+    fill:rgba(234 ,147 ,26,1);
+}
+button.edit,button.time {
+	border: none;
+	padding: 0;
+	background: transparent;
+	font: inherit;
+	cursor: pointer;
+}
+button.edit:focus,button.time:focus{
+    outline: solid 0 transparent;
+    box-shadow: 0 0 0 2px #8ed0f9
+}
+
+button.edit:hover {
+    background: rgba(36, 196, 200, 0.1)
+}
+button.time:hover{
+    background-color: rgba(234, 147, 26, 0.1);
+}
+
+
+
+.delete {
+	overflow: hidden;
+	position: relative;
+	border: none;
+	padding: 0;
+	width: 2em; height: 2em;
+	background: transparent;
+	color: red;
+	font: inherit;
+	text-indent: 100%;
+	cursor: pointer;
+}
+.delete:focus {
+    outline: solid 0 transparent;
+    box-shadow: 0 0 0 2px #8ed0f9
+}
+
+.delete:hover {
+    background: rgba(255, 0, 0, 0.1)
+}
+
+.delete:before, .delete:after {
+    position: absolute;
+    top: 15%; left: calc(50% - .0625em);
+    width: .125em; height: 70%;
+    transform: rotate(45deg);
+    background: currentcolor;
+    content: ''
+}
+
+.delete:after { transform: rotate(-45deg); }
