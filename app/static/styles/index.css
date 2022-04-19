@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Ms+Madi&family=Titillium+Web:wght@600&display=swap');
 body{
     background-color: #ebebeb;
     background-image: url(../img/insat.png);
@@ -62,6 +61,7 @@ body{
     background-color: white;
 }
 .todo{
+    cursor: pointer!important;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -73,6 +73,11 @@ body{
 
 .todo p{
     width: 60%;
+    display: flex;
+    font-size: 17px;
+    font-family: 'Archivo',sans-serif;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .todo button{
     width: 10%;
@@ -102,7 +107,7 @@ button.edit,button.time {
 	cursor: pointer;
 }
 button.edit:focus,button.time:focus{
-    outline: solid 0 transparent;
+    outline: none;
     box-shadow: 0 0 0 2px #8ed0f9
 }
 
@@ -128,7 +133,7 @@ button.time:hover{
 	cursor: pointer;
 }
 .delete:focus {
-    outline: solid 0 transparent;
+    outline: none;
     box-shadow: 0 0 0 2px #8ed0f9
 }
 
@@ -146,3 +151,12 @@ button.time:hover{
 }
 
 .delete:after { transform: rotate(-45deg); }
+
+.todo > button{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.todo:hover >button{
+    opacity:1
+}
