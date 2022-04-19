@@ -35,7 +35,26 @@ body{
     text-align: end;
     font-size: 30px;
 }
+.input input{
+    font-size: 25px;
+    font-family: 'Archivo',sans-serif;
+    padding-left: 10px;
+}
+.input button{
+    border: none;
+	padding: 3px 20px;
+	background: transparent;
+	font: inherit;
+	cursor: pointer;
+}
+.input button:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px hsl(103, 100%, 96%)
+}
 
+.input button:hover {
+    background: hsl(103, 100%, 96%)
+}
 .container *{
     border-radius: 10px;
     margin :10px;
