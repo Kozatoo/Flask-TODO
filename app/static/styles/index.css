@@ -35,10 +35,8 @@ body{
     text-align: end;
     font-size: 30px;
 }
-.input input{
-    font-size: 25px;
-    font-family: 'Archivo',sans-serif;
-    padding-left: 10px;
+.header input{
+    
 }
 .input button{
     border: none;
@@ -49,11 +47,11 @@ body{
 }
 .input button:focus{
     outline: none;
-    box-shadow: 0 0 0 2px hsl(103, 100%, 96%)
+    box-shadow: 0 0 0 2px hsl(101, 100%, 82%)
 }
 
 .input button:hover {
-    background: hsl(103, 100%, 96%)
+    background: #ebffe2
 }
 .container *{
     border-radius: 10px;
@@ -102,7 +100,7 @@ body{
     width: 10%;
     height: 40px;
     padding: 0;
-    margin:3px
+    margin:auto
 }
 .todo button * {
     margin: 0;
